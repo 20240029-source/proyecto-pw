@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #123A5F;
+  --color-primary-dark: #0C2A46;
+  --color-primary-soft: #E6EEF5;
+  --color-accent: #0F8B7E;
+  --color-bg: #F7F9FB;
+  --color-surface: #FFFFFF;
+  --color-border: #DCE3EA;
+  --color-text: #16212B;
+  --color-text-muted: #67757F;
+  --color-success: #1E7F4D;
+  --color-warning: #B7791F;
+  --color-danger: #B4322B;
+  --color-info: #3B6FA8;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --shadow-card: 0 1px 2px rgba(18, 58, 95, .06);
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--color-text);
+    background: var(--color-bg);
+}
+
+#convocatorias {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.head h2 {
+    font-size: 20px;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.head a {
+    color: var(--color-accent);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.convos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.convos article {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    box-shadow: var(--shadow-card);
+    width: 500px;
+}
+
+.convos .avatar {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background: var(--color-primary-soft);
+    color: var(--color-primary);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.convos .pie {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 8px;
+    align-items: center;
+}   
+
+.convos .descripcion {
+    font-size: 12px;
+    color: var(--color-text-muted);
+}
+
+
+.convos .precio {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.convos .cierre {
+    font-size: 12px;
+    color: var(--color-text-muted);
+    margin-left: 8px;
+}
+
+
+.convos h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+.convos p {
+    margin: 0;
+}
+
+.pasos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.pasos article {
+    padding: 16px 20px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    box-shadow: var(--shadow-card);
+    width: 320px;
+}
+
+.pasos h3 {
+    display: flex;
+    gap: 8px;
+    margin: 0 0 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.pasos .numero {
+    display: grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.pasos p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--color-text-muted);
+}
+
+.publicar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-top: 16px;
+    padding: 20px 24px;
+    background: var(--color-primary);
+    border-radius: 6px;
+    color: #fff;
+}
+
+.publicar h3 {
+    margin: 0 0 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.publicar p {
+    margin: 0;
+    font-size: 12px;
+    color: grey
+}
+
+.publicar button {
+    color: #fff;
+    background: var(--color-accent);
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+}
+
+.footer {
+    margin-top: 32px;
+    padding: 24px 16px;
+    background: var(--color-primary-dark);
+    color: #fff;
+}
+
+.footer-interior {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p, .footer h4, .footer ul {
+    margin: 0;
+}
+
+.footer-nombre {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-descripcion {
+    max-width: 260px;
+    font-size: 12px;
+    color: grey;
+}
+
+.footer-columna h4 {
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: grey;
+}
+
+.footer-columna ul {
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.footer-columna a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-copy {
+    font-size: 12px;
+    color: grey;
+}
